@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi App de Prueba</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-umd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="back-btn">← Volver</a>
+            <h1>Contacto</h1>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>📞 Contáctanos</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="/" class="nav-item">
+                <span class="icon">🏠</span>
+                Inicio
+            </a>
+            <a href="/about.html" class="nav-item">
+                <span class="icon">ℹ️</span>
+                Acerca de
+            </a>
+            <a href="/contact.html" class="nav-item active">
+                <span class="icon">📞</span>
+                Contacto
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado! (simulado)');
+        });
+    </script>
+</body>
+</html>

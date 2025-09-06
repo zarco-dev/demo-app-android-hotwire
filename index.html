@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App de Prueba</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-umd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 Mi App de Prueba</h1>
+            <p>Probando Hotwired Native</p>
+        </header>
+        
+        <nav>
+            <a href="/" class="nav-item active">
+                <span class="icon">🏠</span>
+                Inicio
+            </a>
+            <a href="/about.html" class="nav-item">
+                <span class="icon">ℹ️</span>
+                Acerca de
+            </a>
+            <a href="/contact.html" class="nav-item">
+                <span class="icon">📞</span>
+                Contacto
+            </a>
+        </nav>
+
+        <main>
+            <div class="card">
+                <h2>¡Bienvenido!</h2>
+                <p>Esta es una página de prueba para testear Hotwired Native.</p>
+                <button class="btn-primary" onclick="showMessage()">Presiona aquí</button>
+            </div>
+
+            <div class="card">
+                <h3>Características:</h3>
+                <ul>
+                    <li>✅ Navegación nativa</li>
+                    <li>✅ Transiciones suaves</li>
+                    <li>✅ Responsive design</li>
+                    <li>✅ Turbo Drive</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('¡Funciona! Esto se ejecuta dentro de la app nativa');
+        }
+    </script>
+</body>
+</html>
